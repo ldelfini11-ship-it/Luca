@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+<!-- Firebase App (necessário para iniciar Firebase) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<!-- Firebase Messaging -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-messaging-compat.js"></script>
+
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hábitos — Luca</title>
@@ -2180,5 +2187,19 @@ renderCalendar();
   }
 })();
 </script>
+
+<script type="module">
+  import { FIREBASE_CONFIG, VAPID_KEY } from './firebase-config.js';
+
+  firebase.initializeApp(FIREBASE_CONFIG);
+
+  // Aqui você pode continuar usando firebase
+  // Exemplo:
+  // const messaging = firebase.messaging();
+  // ...
+</script>
+
+
+  
 </body>
 </html>
