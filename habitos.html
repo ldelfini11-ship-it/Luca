@@ -1898,12 +1898,11 @@ const NOTIF_ICON = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http:
 
 const DEFAULT_NOTIFS = [
   { id:'agua',      label:'💧 Água',       msg:'Hora de beber água! 💧 Beba um copo agora.',          enabled:true, startTime:'08:00', recur:'hours',   recurVal:2, weekday:-1 },
-  { id:'remedio1',  label:'💊 Remédio 1',  msg:'Lembrete: tome seu remédio! 💊 (1ª dose)',            enabled:true, startTime:'10:00', recur:'once',    recurVal:0, weekday:-1 },
-  { id:'remedio2',  label:'💊 Remédio 2',  msg:'Lembrete: tome seu remédio! 💊 (2ª dose)',            enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
+  { id:'remedio1',  label:'💊 Remédio',    msg:'Lembrete: tome seu remédio! 💊',                      enabled:true, startTime:'10:00', recur:'hours',   recurVal:12, weekday:-1 },
   { id:'exercicio', label:'🏃 Exercício',  msg:'Hora do exercício! 🏃 30 minutos fazem a diferença.', enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'livro',     label:'📚 Livro',      msg:'Que tal ler um pouco agora? 📚',                      enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'estudo',    label:'🧠 Estudo',     msg:'Hora de estudar! 🧠 Cada minuto conta.',              enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
-  { id:'ingles',    label:'🇺🇸 Inglês',    msg:'Pratique inglês hoje! 🇺🇸',                            enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
+  { id:'ingles',    label:'🇺🇸 Inglês',      msg:'Pratique inglês hoje! 🇺🇸',                            enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'fruta',     label:'🍎 Fruta',      msg:'Lembrete: comer fruta hoje! 🍎',                      enabled:true, startTime:'08:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'biblia',    label:'✝️ Bíblia',     msg:'Momento da Bíblia ✝️',                                enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'peso',      label:'⚖️ Peso',       msg:'Segunda-feira: hora de se pesar! ⚖️',                 enabled:true, startTime:'08:00', recur:'weekday', recurVal:1, weekday:1  },
