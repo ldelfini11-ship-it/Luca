@@ -215,7 +215,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 <div class="app">
   <!-- Sidebar -->
   <nav class="sidebar">
-    <span class="sidebar-logo">LCA</span>
+    <span class="sidebar-logo">EXCELSIOR</span>
     <button class="sidebar-btn active" data-page="dashboard" title="Dashboard" onclick="showPage('dashboard',this)">⊞</button>
     <button class="sidebar-btn" data-page="habitos" title="Hábitos" onclick="showPage('habitos',this)">◉</button>
     <button class="sidebar-btn" data-page="historico" title="Histórico" onclick="showPage('historico',this)">◫</button>
@@ -1898,8 +1898,7 @@ const NOTIF_ICON = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http:
 
 const DEFAULT_NOTIFS = [
   { id:'agua',      label:'💧 Água',       msg:'Hora de beber água! 💧 Beba um copo agora.',          enabled:true, startTime:'08:00', recur:'hours',   recurVal:2, weekday:-1 },
-  { id:'remedio1',  label:'💊 Remédio 1',  msg:'Lembrete: tome seu remédio! 💊 (1ª dose)',            enabled:true, startTime:'10:00', recur:'once',    recurVal:0, weekday:-1 },
-  { id:'remedio2',  label:'💊 Remédio 2',  msg:'Lembrete: tome seu remédio! 💊 (2ª dose)',            enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
+  { id:'remedio1',  label:'💊 Remédio 1',  msg:'Lembrete: tome seu remédio! 💊',            enabled:true, startTime:'10:00', recur:'Hours',    recurVal:12, weekday:-1 },
   { id:'exercicio', label:'🏃 Exercício',  msg:'Hora do exercício! 🏃 30 minutos fazem a diferença.', enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'livro',     label:'📚 Livro',      msg:'Que tal ler um pouco agora? 📚',                      enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'estudo',    label:'🧠 Estudo',     msg:'Hora de estudar! 🧠 Cada minuto conta.',              enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
