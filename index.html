@@ -25,7 +25,7 @@
   --border2: rgba(255,255,255,0.12);
   --text: #f0ede8;
   --muted: #888885;
-  --accent: #c8f060;
+  --accent: #11be8e;
   --accent2: #60c8f0;
   --accent3: #f0a060;
   --accent4: #f060a8;
@@ -220,12 +220,12 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 <div class="app">
   <!-- Sidebar -->
   <nav class="sidebar">
-    <span class="sidebar-logo">LCA</span>
-    <button class="sidebar-btn active" data-page="dashboard" title="Dashboard" onclick="showPage('dashboard',this)">⊞</button>
-    <button class="sidebar-btn" data-page="habitos" title="Hábitos" onclick="showPage('habitos',this)">◉</button>
-    <button class="sidebar-btn" data-page="historico" title="Histórico" onclick="showPage('historico',this)">◫</button>
-    <button class="sidebar-btn" data-page="stats" title="Estatísticas" onclick="showPage('stats',this)">≈</button>
-    <button class="sidebar-btn" data-page="config" title="Configurações" onclick="showPage('config',this)">⚙</button>
+    <span class="sidebar-logo">EXCELSIOR</span>
+    <button class="sidebar-btn active" data-page="dashboard" title="Dashboard" onclick="showPage('dashboard',this)">🎯</button>
+    <button class="sidebar-btn" data-page="habitos" title="Hábitos" onclick="showPage('habitos',this)">🧑🏻‍💻</button>
+    <button class="sidebar-btn" data-page="historico" title="Histórico" onclick="showPage('historico',this)">📅</button>
+    <button class="sidebar-btn" data-page="stats" title="Estatísticas" onclick="showPage('stats',this)">📊</button>
+    <button class="sidebar-btn" data-page="config" title="Configurações" onclick="showPage('config',this)">⚙️</button>
   </nav>
 
   <div class="main">
@@ -2247,12 +2247,11 @@ function dangerClear() {
 
 // ========== NOTIFICATIONS ==========
 
-const NOTIF_ICON = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e0e0f"/><polyline points="12,44 24,28 34,36 52,14" fill="none" stroke="#c8f060" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="52" cy="14" r="5" fill="#c8f060"/></svg>');
+const NOTIF_ICON = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e0e0f"/><polyline points="12,44 24,28 34,36 52,14" fill="none" stroke="#11be8e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="52" cy="14" r="5" fill="#11be8e"/></svg>');
 
 const DEFAULT_NOTIFS = [
   { id:'agua',      label:'💧 Água',       msg:'Hora de beber água! 💧 Beba um copo agora.',          enabled:true, startTime:'08:00', recur:'hours',   recurVal:2, weekday:-1 },
-  { id:'remedio1',  label:'💊 Remédio 1',  msg:'Lembrete: tome seu remédio! 💊 (1ª dose)',            enabled:true, startTime:'10:00', recur:'once',    recurVal:0, weekday:-1 },
-  { id:'remedio2',  label:'💊 Remédio 2',  msg:'Lembrete: tome seu remédio! 💊 (2ª dose)',            enabled:true, startTime:'22:00', recur:'once',    recurVal:0, weekday:-1 },
+  { id:'remedio1',  label:'💊 Remédio',  msg:'Lembrete: tome seu remédio! 💊',            enabled:true, startTime:'10:00', recur:'hours',    recurVal:12, weekday:-1 },
   { id:'exercicio', label:'🏃 Exercício',  msg:'Hora do exercício! 🏃 30 minutos fazem a diferença.', enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'livro',     label:'📚 Livro',      msg:'Que tal ler um pouco agora? 📚',                      enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'estudo',    label:'🧠 Estudo',     msg:'Hora de estudar! 🧠 Cada minuto conta.',              enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
