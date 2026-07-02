@@ -2251,7 +2251,7 @@ const NOTIF_ICON = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http:
 
 const DEFAULT_NOTIFS = [
   { id:'agua',      label:'💧 Água',       msg:'Hora de beber água! 💧 Beba um copo agora.',          enabled:true, startTime:'08:00', recur:'hours',   recurVal:2, weekday:-1 },
-  { id:'remedio1',  label:'💊 Remédio',  msg:'Lembrete: tome seu remédio! 💊',            enabled:true, startTime:'10:00', recur:'hours',    recurVal:12, weekday:-1 },
+  { id:'remedio1',  label:'💊 Remédio',  msg:'Lembrete: tome seu remédio!',            enabled:true, startTime:'10:00', recur:'hours',    recurVal:12, weekday:-1 },
   { id:'exercicio', label:'🏃 Exercício',  msg:'Hora do exercício! 🏃 30 minutos fazem a diferença.', enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'livro',     label:'📚 Livro',      msg:'Que tal ler um pouco agora? 📚',                      enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
   { id:'estudo',    label:'🧠 Estudo',     msg:'Hora de estudar! 🧠 Cada minuto conta.',              enabled:true, startTime:'20:00', recur:'once',    recurVal:0, weekday:-1 },
@@ -2334,7 +2334,7 @@ async function registerSW() {
   try {
     // O Service Worker do Firebase precisa estar num arquivo real na raiz do site
     // (firebase-messaging-sw.js), pois SW não funciona via blob/cache em produção.
-    const reg = await navigator.serviceWorker.register('/Luca/firebase-messaging-sw.js', { scope: '/Luca/' }).catch(() => null);
+    const reg = await navigator.serviceWorker.register('/firebase-messaging-sw.js', { scope: '/' }).catch(() => null);
     if (reg) { swReg = reg; await navigator.serviceWorker.ready; return swReg; }
   } catch(e) { console.warn('SW register failed:', e); }
   return null;
