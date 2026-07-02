@@ -24,8 +24,8 @@ messaging.onBackgroundMessage((payload) => {
 
   self.registration.showNotification(title, {
     body,
-    icon: '/Luca/icon-192.png',
-    badge: '/Luca/icon-192.png',
+    icon: '/icon-192.png',
+    badge: '/icon-192.png',
     tag,
     renotify: true,
     vibrate: [200, 100, 200],
@@ -39,7 +39,7 @@ self.addEventListener('notificationclick', (event) => {
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
       for (const c of list) { if ('focus' in c) return c.focus(); }
-      if (clients.openWindow) return clients.openWindow('/Luca/');
+      if (clients.openWindow) return clients.openWindow('/');
     })
   );
 });
